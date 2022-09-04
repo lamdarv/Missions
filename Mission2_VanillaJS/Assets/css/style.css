@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+:root{
+    /* Color */
+    --white : rgb(255, 255, 255);
+    --white2 : #F0F0F0;
+    --black : black;
+    --grey : #939eb2;
+    --grey2 : #e8ecef;
+    --red : rgb(220, 64, 30);
+    --green : #00BDB2;
+    --green2 : #D2FFFC;
+
+    /* Box Shadow */
+    --boxShadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
+    --boxShadow2 : 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+    /* Font Size */
+    --veryBig : 65px;
+    --big : 29px;
+    --medium : 25px;
+    --small : 12px;
+
+    /* Padding */
+    --pad1 : 0 0 10px 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+header {
+    max-height: 20vh;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+article {
+    margin: 80px auto;
+    height: 60vh;
+    width: 75%;
+}
+
+.card {
+    width: 95%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+.text-box {
+    position: relative;
+    margin: 40px auto;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flexDirectionCol {
+    flex-direction: column;
+}
+
+#about {
+    height: 70vh;
+    /* opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out; */
+}
+
+#resume {
+    margin-top: 200px;
+    height: 70vh;
+}
+
+.mini-box {
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.miniSquareBox {
+    border-radius: 20px;
+    box-shadow: var(--boxShadow);
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#resume .content {
+    margin-left: 30px;
+    text-align: left;
+    width: 90%;
+}
+
+.img-size-icon {
+    width: 80px;
+}
+
+.paddingMargin-1 {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.setPadding {
+    padding: var(--pad1);
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn {
+    padding: 10px;
+    width: max-content;
+    font-weight: 1000;
+    text-decoration: none;
+    background: var(--white2);
+    box-shadow: var(--boxShadow);
+    border-radius: 3px;
+    border: none;
+}
+
+/* Image Styling */
+.cover img {
+    width: 256px;
+}
+
+/* Background Color */
+.bg-color-green2 {
+    background-color: var(--green2);
+}
+
+/* Font Color */
+.font-black {
+    color: var(--black);
+}
+
+.font-grey {
+    color: var(--grey);
+}
+
+.font-red {
+    color: var(--red);
+}
+
+.font-white {
+    color: var(--white);
+}
+
+.font-green {
+    color: var(--green);
+}
+
+.font-green2 {
+    color: var(--green2);
+}
+
+
+.font-sizeVeryBig {
+    font-size: var(--veryBig);
+}
+
+.font-sizeBig {
+    font-size: var(--big);
+}
+
+.font-sizeMed {
+    font-size: var(--medium);
+}
+
+.font-sizeSmall {
+    font-size: var(--small);
+}
+
+/* Font Weight */
+.font-wg100 {
+    font-weight: 100;
+}
+
+.font-wg200 {
+    font-weight: 200;
+}
+
+.font-wg300 {
+    font-weight: 300;
+}
+
+.font-wg400 {
+    font-weight: 400;
+}
+
+.font-wg500 {
+    font-weight: 500;
+}
+
+.font-wg600 {
+    font-weight: 600;
+}
+
+.font-wg700 {
+    font-weight: 700;
+}
+
+.font-wg800 {
+    font-weight: 800;
+}
+
+.font-wg900 {
+    font-weight: 900;
+}
+
+.font-wg1000 {
+    font-weight: 1000;
+}

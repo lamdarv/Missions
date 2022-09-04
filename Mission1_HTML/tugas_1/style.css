@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.myFont {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.font-yellow {
+    color: yellow;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        'merah hijau hijau ungu ungu'
+        'merah merahMuda hijauMuda hijauMuda hijauMuda'
+        'merah merahMuda biru biruTua biruTua'
+        'jingga merahMuda biru biruTua biruTua'
+        'jingga kuning kuning biruTua biruTua'
+        'jingga kuning kuning biruTua biruTua';
+}
+
+
+.item {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+.merah {
+    grid-area: merah;
+}
+
+.hijau {
+    grid-area: hijau;
+}
+
+.ungu {
+    grid-area: ungu;
+}
+
+.merahMuda {
+    grid-area: merahMuda; 
+}
+
+.hijauMuda {
+    grid-area: hijauMuda;
+}
+
+.biru {
+    grid-area: biru;
+}
+
+.biruTua {
+    grid-area: biruTua;
+}
+
+.jingga {
+    grid-area: jingga;
+}
+
+.kuning {
+    grid-area: kuning;
+}
+
+.color-merah {
+    background-color: red;
+}
+
+.color-hijau {
+    background-color: green;
+}
+
+.color-ungu {
+    background-color: rgb(208, 36, 208);
+}
+
+.color-merahMuda {
+    background-color: pink; 
+}
+
+.color-hijauMuda {
+    background-color: #0CFF0C;
+}
+
+.color-biru {
+    background-color: rgb(45, 45, 235);
+}
+
+.color-biruTua {
+    background-color: #000077;
+}
+
+.color-jingga {
+    background-color: orange;
+}
+
+.color-kuning {
+    background-color: yellow;
+}
