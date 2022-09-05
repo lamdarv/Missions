@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <head>
-    <title>Tugas Minggu 2 - Lamda Richo Vanjaya Sumaryadi</title>
+    <title>Tugas Minggu 2 - Lamda Richo Vanjaya Sumaryadi - 201524049</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge"> 
     <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="icon" href="./Assets/img/logo.svg">
+    <script src="./Assets/js/animation.js"></script>
 </head>
 <body>
     <!-- Header Content -->
-    <header>
-        <nav class="bg-color-green2">
-            <a href="index.html"><img src="./Assets/img/logo.png" alt=""></a>
+    <header id="setFixed">
+        <nav class="bg-color-green3">
+            <a href="index.html"><img src="./Assets/img/logo.svg" alt=""></a>
             <div class="nav-links">
                 <ul>
-                    <li><a class="font-black font-sizeMed" href="#home">Home</a></li>
+                    <li><a class="font-black font-sizeMed" href="">Home</a></li>
                     <li><a class="font-black font-sizeMed" href="#about">About</a></li>
                     <li><a class="font-black font-sizeMed" href="#resume">Resume</a></li>
-                    <li><a class="font-black font-sizeMed" href="">Contact</a></li>
+                    <li><a class="font-black font-sizeMed" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav> 
@@ -27,9 +29,9 @@
             <!-- Introduction Section -->
             <article id="home" class="" >
                 <div class="text-box flexDirectionCol bg-grey2" id="Home">
-                   <h3 class="font-wg900 font-green font-sizeMed ">hello! i am</h3>
-                   <h1 class="font-wg1000 font-black font-sizeVeryBig setPadding">R Van Jaya</h1>
-                   <h3 class="font-wg500 font-sizeMed font-black">I am <a href="" class="font-green">UI/UX Designer</a> </h3>
+                   <h3 id="intro1" class="font-wg900 font-green font-sizeMed ">hello! i am</h3>
+                   <h1 id="intro2" class="font-wg1000 font-black font-sizeVeryBig setPadding">R Van Jaya</h1>
+                   <h3 id="intro3" class="font-wg500 font-sizeMed font-black">I am <a href="" class="font-green">Frontend Developer</a> </h3>
                </div>
            </article>
 
@@ -38,37 +40,39 @@
                 <div class="text-box flexDirectionCol">
                     <div class="cover">
                         <a href="">
-                            <img src="./Assets/img/profileImg.png" alt="">
+                            <img id="aboutImage" class="js-scroll" src="./Assets/img/profileImg.png" alt="">
                         </a>
                     </div>
                     <div class="content">
-                        <h1 class="paddingMargin-1">About Me</h1>
-                        <p class="paddingMargin-1">
+                        <h1 id="aboutMe" class="paddingMargin-1 js-scroll">About Me</h1>
+                        <p id="aboutDesc" class="paddingMargin-1 js-scroll">
                             Frontend Developer, I create web pages with UI/UX, I have
                             years of experience and many clients are happy with the projects
                             carried out.
                         </p>
                         <div class="foot paddingMargin-1">
-                            <a class="btn font-green" href="#contact">Contact Me</a>
+                            <a id="aboutContact" class="btn bg-color-white2 font-green js-scroll" href="#contact">Contact Me</a>
                         </div>
                     </div>
                 </div>
            </article>
 
+           
+
            <!-- Resume Section -->
             <article id="resume" class="">
                 <!-- Education -->
-                <div class="text-box flexDirectionCol">
-                    <h1 class="paddingMargin-1 font-green">Education</h1>
-                    <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
+                <div class="text-box flexDirectionCol ">
+                    <h1 id="educationTitle" class="paddingMargin-1 font-green js-scroll">Education</h1>
+                    <div id="education" class="mini-box bg-color-green2 js-scroll">
+                        <img class="img-size-icon" src="./Assets/img/education.svg" alt="">
                         <div class="content">
                             <p class="font-green font-wg600">2020 - Now</p>
                             <p class="font-wg800 font-sizeBig">Software Engineering</p>
                             <p class="font-wg500">Politeknik Negeri Bandung</p>
                         </div>
                     </div>
-                    <div class="mini-box bg-color-green2">
+                    <div id="education2" class="mini-box bg-color-green2 js-scroll">
                         <img class="img-size-icon" src="./Assets/img/education.png" alt="">
                         <div class="content">
                             <p class="font-green font-wg600">2017 - 2020</p>
@@ -78,29 +82,29 @@
                     </div>
                 </div>
 
-                <!-- Education -->
-                <div class="text-box flexDirectionCol">
-                    <h1 class="paddingMargin-1 font-green">Experience</h1>
+                <!-- Experience -->
+                <div id="resume1" class="text-box flexDirectionCol ">
+                    <h1 id="experienceTitle" class="paddingMargin-1 font-green js-scroll">Experience</h1>
                     
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
-                        <div class="content">
+                        <img id="experience" class="img-size-icon js-scroll" src="./Assets/img/experience.svg" alt="">
+                        <div id="experience_" class="content js-scroll">
                             <p class="font-green font-wg600">2022</p>
                             <p class="font-wg800 font-sizeBig">Frontend Developer</p>
                             <p class="font-wg500">Tokopedia</p>
                         </div>
                     </div>
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
-                        <div class="content">
+                        <img id="experience2" class="img-size-icon js-scroll" src="./Assets/img/experience.svg" alt="">
+                        <div id="experience2_" class="content js-scroll">
                             <p class="font-green font-wg600">2021</p>
                             <p class="font-wg800 font-sizeBig">UI/UX Designer</p>
                             <p class="font-wg500">Bukalapak</p>
                         </div>
                     </div>
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
-                        <div class="content">
+                        <img id="experience3" class="img-size-icon js-scroll" src="./Assets/img/experience.svg" alt="">
+                        <div id="experience3_" class="content js-scroll">
                             <p class="font-green font-wg600">2018-2021</p>
                             <p class="font-wg800 font-sizeBig">Videographer and Photographer</p>
                             <p class="font-wg500">Freelance</p>
@@ -109,38 +113,68 @@
                 </div>
 
                 <!-- Awards -->
-                
                 <div class="text-box flexDirectionCol">
-                    <h1 class="paddingMargin-1 font-green">Awards</h1>
+                    <h1 id="awardTitle" class="paddingMargin-1 font-green js-scroll">Awards</h1>
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
+                        <img id="awardImg" class="img-size-icon js-scroll" src="./Assets/img/awards.svg" alt="">
                         <div class="content">
-                            <p class="font-wg800 font-sizeMed">3rd Place in POM POLBAN - Photography </p>
-                            <p class="font-wg500 font-green">2021</p>
+                            <p id="award3rd" class="font-wg800 font-sizeMed js-scroll">3rd Place in POM POLBAN - Photography </p>
+                            <p id="award2021" class="font-wg500 font-green js-scroll">2021</p>
                         </div>
                     </div>
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
+                        <img id="awardImg2" class="img-size-icon js-scroll" src="./Assets/img/awards.svg" alt="">
                         <div class="content">
-                            <p class="font-wg800 font-sizeMed">Runner Up FLS2N - Short Movie </p>
-                            <p class="font-wg500 font-green">2019</p>
+                            <p id="awardRunner" class="font-wg800 font-sizeMed js-scroll">Runner Up FLS2N - Short Movie </p>
+                            <p id="award2019" class="font-wg500 font-green js-scroll">2019</p>
                         </div>
                     </div>
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
+                        <img id="awardImg3" class="img-size-icon js-scroll" src="./Assets/img/awards.svg" alt="">
                         <div class="content">
-                            <p class="font-wg800 font-sizeMed">Participants in OSN - Informatics</p>
-                            <p class="font-wg500 font-green">2019</p>
+                            <p id="awardOsn" class="font-wg800 font-sizeMed js-scroll">Participants in OSN - Informatics</p>
+                            <p id="awardOsn2" class="font-wg500 font-green js-scroll">2019</p>
                         </div>
                     </div>
                     <div class="mini-box bg-color-green2">
-                        <img class="img-size-icon" src="./Assets/img/education.png" alt="">
+                        <img id="awardImg4" class="img-size-icon js-scroll" src="./Assets/img/awards.svg" alt="">
                         <div class="content">
-                            <p class="font-wg800 font-sizeMed">Participants in OSN - Informatics</p>
-                            <p class="font-wg500 font-green">2018</p>
+                            <p id="awardOsn3" class="font-wg800 font-sizeMed js-scroll">Participants in OSN - Informatics</p>
+                            <p id="awardOsn4" class="font-wg500 font-green js-scroll">2018</p>
                         </div>
                     </div>
                 </div>
+            </article>
+
+            <!-- Contact Section -->
+            <article id="contact">
+                <div class="titleContact flexDirectionCol">
+                    <p id="contactTitle" class="font-wg1000 font-sizeBig js-scroll">Contact</p>
+                    <p id="contactDesc" class="font-sizeMed2 font-grey js-scroll">You can contact me through the contacts below.</p>
+                </div>
+                <div class="text-box setPadding4">
+                    <div class="miniSquareBox setMargin bg-color-green2">
+                        <img id="contactCall" class="img-size-icon2 js-scroll" src="./Assets/img/call.svg" alt="">
+                        <p id="contactCall2" class="font-wg700 js-scroll">Call Number</p>
+                        <p id="contactCall3" class="font-sizeSmall font-green js-scroll">+62 89-111-111-111</p>
+                    </div>
+                    <div class="medSquareBox flexDirectionCol setMargin">
+                        <input id="contactForm" class="js-scroll" type="text" placeholder="Name...">
+                        <input id="contactForm2" class="js-scroll" type="email" placeholder="Email...">
+                        <input id="contactForm3" class="js-scroll" type="text" placeholder="Subject...">
+                        <input id="contactForm4" class="message js-scroll" type="text" placeholder="Message...">
+                        <a id="contactForm5" class="btn bg-color-green2 font-green setMargin2 js-scroll" href="">SEND</a>
+                    </div>
+                    <div class="miniSquareBox bg-color-green2 ">
+                        <img id="contactEmail" class="img-size-icon2 js-scroll" src="./Assets/img/email.svg" alt="">
+                        <p id="contactEmail2" class="font-wg700 js-scroll">Email</p>
+                        <p id="contactEmail3" class="font-sizeSmall font-green js-scroll">lamdarvs@gmail.com</p>
+                    </div>
+                    
+                </div>
+                <!-- <div class="medSquareBox">
+                    asuu
+                </div> -->
             </article>
         </div>
     </main>

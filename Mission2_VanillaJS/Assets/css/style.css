@@ -10,6 +10,7 @@
     --red : rgb(220, 64, 30);
     --green : #00BDB2;
     --green2 : #D2FFFC;
+    --green3 : #E4FFFD;
 
     /* Box Shadow */
     --boxShadow : 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -19,10 +20,18 @@
     --veryBig : 65px;
     --big : 29px;
     --medium : 25px;
+    --medium2 : 20px;
     --small : 12px;
 
     /* Padding */
     --pad1 : 0 0 10px 0;
+    --pad2 : 0 30px 0 30px;
+    --pad3 : 30px;
+    --pad4 : 0 0 80px 0;
+
+    /* Margin */
+    --mg1 : 0 30px 0 30px;
+    --mg2 : 30px 0 8px 0;
 }
 
 * {
@@ -34,7 +43,13 @@
 header {
     max-height: 20vh;
     width: 100%;
-    position: relative;
+
+}
+
+#setFixed {
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
 nav {
@@ -103,7 +118,7 @@ article {
 
 #resume {
     margin-top: 200px;
-    height: 70vh;
+    height: 100%;
 }
 
 .mini-box {
@@ -117,17 +132,44 @@ article {
     justify-content: left;
 }
 
+.titleContact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .miniSquareBox {
     border-radius: 20px;
     box-shadow: var(--boxShadow);
     width: 25%;
     margin: 10px;
     padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
+.medSquareBox {
+    border-radius: 5px;
+    box-shadow: var(--boxShadow);
+    width: 65%;
+    margin: 10px;
+    padding: 10px;  
+    display: flex;
+    justify-content: center;
+
+}
+
+.medSquareBox input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid var(--grey2);
+    border-radius: 4px;
+    box-shadow: var(--boxShadow);
+}
+
+.message {
+    padding: 10px;
+    height: 140px;
+}
 
 #resume .content {
     margin-left: 30px;
@@ -139,6 +181,11 @@ article {
     width: 80px;
 }
 
+.img-size-icon2 {
+    width: 80px;
+    text-align: center;
+}
+
 .paddingMargin-1 {
     padding: 10px;
     margin: 10px auto;
@@ -148,9 +195,24 @@ article {
     padding: var(--pad1);
 }
 
-.active {
-    opacity: 1;
-    transform: scale(1);
+.setPadding2 {
+    padding: var(--pad2);
+}
+
+.setPadding3 {
+    padding: var(--pad3);
+}
+
+.setPadding4 {
+    padding: var(--pad4);
+}
+
+.setMargin {
+    margin: var(--mg1);
+}
+
+.setMargin2 {
+    margin: var(--mg2);
 }
 
 .btn {
@@ -158,10 +220,21 @@ article {
     width: max-content;
     font-weight: 1000;
     text-decoration: none;
-    background: var(--white2);
     box-shadow: var(--boxShadow);
     border-radius: 3px;
     border: none;
+}
+
+/* Scroll Animation */
+.js-scroll {
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 1s ease-in-out;
+}
+
+.active {
+    opacity: 1;
+    transform: scale(1);
 }
 
 /* Image Styling */
@@ -170,8 +243,20 @@ article {
 }
 
 /* Background Color */
+.bg-color-green {
+    background-color: var(--green);
+}
+
 .bg-color-green2 {
     background-color: var(--green2);
+}
+
+.bg-color-green3 {
+    background-color: var(--green3);
+}
+
+.bg-color-white2 {
+    background-color: var(--white2);
 }
 
 /* Font Color */
@@ -210,6 +295,10 @@ article {
 
 .font-sizeMed {
     font-size: var(--medium);
+}
+
+.font-sizeMed2 {
+    font-size: var(--medium2);
 }
 
 .font-sizeSmall {
