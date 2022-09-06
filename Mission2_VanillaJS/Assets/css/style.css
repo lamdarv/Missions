@@ -187,6 +187,20 @@ footer {
 
 }
 
+/* label #btnNavbar,
+label #close {
+    float: right;
+    margin-left: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+} */
+
+/* Image Style */
 .img-size-icon {
     width: 80px;
 }
@@ -196,6 +210,12 @@ footer {
     text-align: center;
 }
 
+.img-size-icon3 {
+    width: 40px;
+    text-align: center;
+}
+
+/* Padding Style */
 .paddingMargin-1 {
     padding: 10px;
     margin: 10px auto;
@@ -217,6 +237,7 @@ footer {
     padding: var(--pad4);
 }
 
+/* Margin Style */
 .setMargin {
     margin: var(--mg1);
 }
@@ -225,6 +246,7 @@ footer {
     margin: var(--mg2);
 }
 
+/* Button Style */
 .btn {
     padding: 10px;
     width: max-content;
@@ -354,4 +376,110 @@ footer {
 
 .font-wg1000 {
     font-weight: 1000;
+}
+
+@media screen and (max-width: 475px) {
+    nav {
+        max-width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0 10px 0;
+    }
+    .logoResp {
+        margin-left: 10px;
+    }
+    .nav-links {
+        width: 90%;
+        justify-content: center;
+        text-align: center;
+        margin: 10px 10px 10px 20px;
+    }
+
+    .nav-links ul li a {
+        font-size: 16px;
+        margin: 10px;
+    }
+
+    .nav-links ul li {
+       padding: 0;
+    }
+
+    #home {
+        width: 100%;
+        height: 40vh;
+    }
+
+    #home #intro2 {
+        width: 100%;
+        font-size: 40px;
+    }
+
+    .cover img {
+        width: 128px;
+    }
+
+    #about .content {
+        width: 250%;
+    } 
+
+    #resume {
+        margin-top: 0;
+    }
+
+    .img-size-icon {
+        margin-left: 15px;
+    }
+
+    .mini-box {
+        width: 220%;
+    }
+
+    .mbox-1 {
+        font-size: 14px;
+    }
+
+    .mbox-2 {
+        font-size: 20px;
+    }
+
+    .mbox-3 {
+        font-size: 17px;
+    }
+
+    .titleResp-1 {
+        font-size: 24px;
+    }
+
+    article {
+        height: 150vh;
+    }
+
+    #contact .text-box {
+        flex-direction: column;
+    }
+
+    .miniSquareBox {
+        width: 80%;
+        margin: 20px;
+    }
+
+    .medSquareBox {
+        width: 80%;
+    }
+
+    .medSquareBox input {
+        width: 80%;
+    }
+
+    footer {
+        flex: none;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding: 10px 0 10px 0 ;
+        height: 60px;
+        width: 100%;
+    }
 }
